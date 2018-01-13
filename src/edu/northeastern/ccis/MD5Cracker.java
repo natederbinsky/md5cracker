@@ -1,4 +1,4 @@
-package edu.neu.ccs.course.cs5200;
+package edu.northeastern.ccis;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
