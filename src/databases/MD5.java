@@ -1,4 +1,4 @@
-package edu.northeastern.ccis;
+package databases;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;

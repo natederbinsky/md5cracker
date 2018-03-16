@@ -1,4 +1,4 @@
-package edu.northeastern.ccis;
+package databases;
 
 public class CommonHashes {
 	
