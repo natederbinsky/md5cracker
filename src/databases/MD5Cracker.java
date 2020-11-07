@@ -10,10 +10,10 @@ import java.util.Date;
 public class MD5Cracker {
 	
 	public static void usage() {
-		System.out.println(String.format("Usage: java %s [0aA-start-end] <hash>", MD5Cracker.class.getCanonicalName()));
+		System.out.println(String.format("Usage: java %s [1aA-start-end] <hash>", MD5Cracker.class.getCanonicalName()));
 		System.out.println(" If no pattern is provided, uses a list of top-1000 passwords from http://www.passwordrandom.com/most-popular-passwords");
 		System.out.println("");
-		System.out.println(" Otherwise, 0=[0-9]");
+		System.out.println(" Otherwise, 1=[0-9]");
 		System.out.println(" Otherwise, a=[a-z]");
 		System.out.println(" Otherwise, A=[A-Z]");
 		System.out.println("");
