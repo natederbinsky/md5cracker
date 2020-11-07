@@ -3,9 +3,16 @@ package databases;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
-import javax.xml.bind.DatatypeConverter;
-
 public class MD5 {
+	
+	// Source: https://mkyong.com/java/java-how-to-convert-bytes-to-hex/
+	public static String hex(byte[] bytes) {
+        StringBuilder result = new StringBuilder();
+        for (byte aByte : bytes) {
+             result.append(String.format("%02X", aByte));
+        }
+        return result.toString();
+    }
 
 	public static void main(String[] args) throws NoSuchAlgorithmException {
 		if (args.length != 1) {
@@ -14,7 +21,7 @@ public class MD5 {
 			final MessageDigest md = MessageDigest.getInstance("MD5");
 			md.update(args[0].getBytes());
 
-			System.out.println(DatatypeConverter.printHexBinary(md.digest()));
+			System.out.println(hex(md.digest()));
 		}
 	}
 

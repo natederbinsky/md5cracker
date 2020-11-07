@@ -7,8 +7,6 @@ import java.text.SimpleDateFormat;
 import java.util.Arrays;
 import java.util.Date;
 
-import javax.xml.bind.DatatypeConverter;
-
 public class MD5Cracker {
 	
 	public static void usage() {
@@ -118,7 +116,7 @@ public class MD5Cracker {
 						
 						md.update(pw);
 					    final byte[] digest = md.digest();
-					    final String myHash = DatatypeConverter.printHexBinary(digest);
+					    final String myHash = MD5.hex(digest);
 					    count++;
 					    
 					    if (myHash.equals(TARGET)) {
